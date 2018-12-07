@@ -1,6 +1,6 @@
 # Benchmark-Utils
 Code generation for benchmarking analysis tools <br>
-To generate a C code use _tb.java_, it generates a _.c_ file and a _.vld_ file for validation. For validation use the validator class as:
+To generate a C code use _tb.java_, it generates a _.c_ file and a _.vld_ file for validation. For validation use the validator class as (asuming your validation file is _rg300.vld_, and the resulting dotfile of the callgraph is in _dotfile_):
 ```java
    validator vl = new validator("rg300.vld");
    vl.validate("dotfile");
