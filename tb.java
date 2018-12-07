@@ -7,12 +7,8 @@ import java.util.Random;
 /**
  * @author      Iman Hosseini <hosseini.iman@yahoo.com>
  * @version     1.0                 (current version number of program)
- * This program generates a C code with 2^N functions called f[binary rep of i] 
- * where i in [0,2^N-1] e.g. for N=3: f001, f010, f011, ..
- * The functions call each other such that the call graph constitutes a N-dimen
- * -sional hypercube. (two functions call each other iff they differ in 1 bit.
- * To use call the program with an int, which would be N. If no args are passed
- * default N is 5.
+ * This program generates a C code with $N functions, then each two function call each other with probability $p
+ * The output is the code in a file called rg($N).c and a file for validation rg($N).vld
  */
 public class tb{
 
